@@ -93,7 +93,7 @@
         variable: 'player',//该属性必需设置，值等于下面的new chplayer()的对象
         autoplay:true,//自动播放
         live:true,
-        video:'http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226019/index.m3u8'
+        video:'http://sdwd.chinashadt.com:1935/live/cctv5.stream/playlist.m3u8'
       };
       var player=new ckplayer(videoObject);
     </script>
@@ -122,7 +122,7 @@
   });
  }
  // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
- // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element throught the `src` property.
+ // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. . URL) directly to the video element throught the `src` property.
  // This is using the built-in support of the plain video element, without using hls.js.
  // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
  // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
@@ -142,11 +142,11 @@
     switch(id)
     {
       case "10":
-        videourl = "http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226019/index.m3u8";
+        videourl = "http://sdwd.chinashadt.com:1935/live/cctv5.stream/playlist.m3u8";
         $('#curChannel').text("CCTV-5+体育赛事高清[信号源0]");
         break;
       case "11":
-        videourl = "http://111.20.33.69/PLTV/88888888/224/3221225761/index.m3u8";
+        videourl = "http://sdwd.chinashadt.com:1935/live/cctv5.stream/playlist.m3u8";
         $('#curChannel').text("CCTV-5+体育赛事高清[信号源1]");
         break;
       case "20":
